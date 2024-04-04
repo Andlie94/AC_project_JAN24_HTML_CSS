@@ -1,10 +1,11 @@
-:root{
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+:root {
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 }
 body {
+  overflow-x: hidden;
   background-color: #edd1be;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(10, 54, 65);
@@ -36,6 +37,12 @@ nav li {
   position: relative;
   left: 100px;
   top: -40px;
+}
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 #search-field {
   position: absolute;
@@ -70,15 +77,6 @@ li a {
   left: 32%;
   display: flex;
 }
-.Bred_text_hero {
-  font-size: x-large;
-  position: absolute;
-  top: 25%;
-  left: 20%;
-  text-align: center;
-  padding: 0%;
-  display: flex;
-}
 h2 {
   font-size: 45px;
   top: 35%;
@@ -86,7 +84,6 @@ h2 {
   text-align: center;
   padding: 2%;
 }
-
 .image_collection {
   display: flex;
   flex-direction: row;
@@ -103,180 +100,314 @@ h2 {
   height: auto;
   float: right;
 }
-.casual_container h3{
-    font-size: 30px;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    position: absolute;
+.casual_container h3 {
+  font-size: 30px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: absolute;
 }
-.Extrem_container img{
-    display: flex;
-    transform: translateY(14.5%);
+.Extrem_container img {
+  display: flex;
+  transform: translateY(14.5%);
 }
-.Extrem_container h3{
-    font-size: 30px;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    position: absolute;
-    transform: translateY(500px);
+.Extrem_container h3 {
+  font-size: 30px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: absolute;
+  transform: translateY(500px);
 }
 .best_sellers h2 {
-    font-size: 50px;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    display: flex;
-    place-content: center;
+  font-size: 50px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  place-content: center;
 }
 
 .best_sellers_container {
-    display:flex;
-    flex-direction: row;
-    flex: 1;
-    place-content: center;
-    flex-wrap: wrap ;
-    max-width: 100%;
-    margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  place-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 5%;
 }
-.best_sellers img{
-    width: 100%;
-    height: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    box-sizing: border-box;
-    position: static;
-    max-width: 100%;
-    place-content: right;
+.best_sellers img {
+  width: 100%;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  box-sizing: border-box;
+  position: static;
+  max-width: 100%;
+  place-content: right;
 }
-.best_sellers p{
-    font-size: 100%;
-    padding-left: 5%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    position: static;
+.best_sellers p {
+  font-size: 100%;
+  padding-left: 5%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: static;
 }
-.buttom_image_container{
-    background-color:rgb(10, 54, 65);
-    display: flex;
-    width: 100%;
-    height: auto;
-    place-content: center
+.buttom_image_container {
+  background-color: rgb(10, 54, 65);
+  display: flex;
+  width: 100%;
+  height: auto;
+  place-content: center;
 }
-.buttom_image_container img{
-    width: 101.2%;
-    height: auto;
-    display: flex;
-    max-width: 100%;
-    position: static;
-    place-content: right;
+.buttom_image_container img {
+  width: 101.2%;
+  height: auto;
+  display: flex;
+  max-width: 100%;
+  position: static;
+  place-content: right;
+  padding-right: 1%;
 }
-.buttom_container{
-    position: relative;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    max-width: 100%;
+.buttom_container {
+  position: relative;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  max-width: 100%;
 }
-.more_to{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    color: rgb(10, 54, 65);
-    font-size: 400%;
-    margin-top: -15%;
-    transform: translate(-50%, -50%)
+.more_to {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: rgb(10, 54, 65);
+  font-size: 400%;
+  margin-top: -15%;
+  transform: translate(-50%, -50%);
 }
-.explore{  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    color: rgb(10, 54, 65);
-    font-size: 900%;
-    margin-top: -8%;
-    transform: translate(-50%, -50%)
+.explore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: rgb(10, 54, 65);
+  font-size: 900%;
+  margin-top: -8%;
+  transform: translate(-50%, -50%);
 }
-.Take_hike{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    color: rgb(10, 54, 65);
-    font-size: 300%;
-    margin-top: 1%;
-    display: flex;
-    transform: translate(-50%, -50%)
+.Take_hike {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: rgb(10, 54, 65);
+  font-size: 300%;
+  margin-top: 1%;
+  display: flex;
+  transform: translate(-50%, -50%);
 }
-.founder{
-    display: flex;
-    padding-left: 10%;
-    max-width: 100%;
-    flex-wrap: wrap;
+.About_us{
+  display: flex;
+  margin-top: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+  flex-direction: row;
 }
-.btext_about_us{
-    margin-top: 5%;
-    place-content: right;
-    padding-right: 1%;
-    float: center;
+.About_us img {
+  width: 700px;
+  height: auto;
+  display: flex;
+  max-width: 100%;
+  place-content: center;
+  padding-right: 20px;
 }
-.founder img {
-    width: 55%;
-    height: auto;
+.about_us_text {
+  text-align: justify;
+  text-align: center;
+  margin-top: 140px;
+  color: rgb(10, 54, 65)
+  height: 50%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
-.btext_about_us h1 {
-    font-size: 50px;
-    display: flex;
-    place-content: center;
-    color: #edd1be;
+.about_us_text h1 {
+  font-size: 50px;
+  font-family: helvetica, Arial,
+  font-style: thin;
 }
-.about_us_box_back{
-    background-color: rgba(10, 54, 65, 0.700);
-    width:44.25rem;
-    height: auto;
-    margin: 1.5rem;
-    position: absolute;
-    margin-left: 48%;
-    margin-top: 4%;
-    display: flex;
-    box-sizing: border-box;
+.about_us_text p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+@media only screen and (max-width: 1100px) {
+  .About_us {
     flex-direction: column;
-    max-width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 3%;
-    max-width: 100%;
+    width: 80%;
+    height: auto;
+    padding-left: 10.5%;
+    padding-right: 0px;
+  }
+  .about_us_text {
+    margin-top: 0px;
+    width: 95%;
+    color: rgb(10, 54, 65);
     place-content: left;
-    transform: scale(1);
-}
-.btext_about_us p{
-    color:#edd1be;
+  }
+  .about_us_text h1 {
     font-size: 30px;
-    line-height: 1.5;
-    font-style:THIN;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    letter-spacing: 0.1rem;
-    text-align: center;
+  }
 }
-.about_us_box_front{
+
+.contactbox_container .h1{
+    padding-left: 10%;
+    font-size: 50px;
+}
+.contact_box{
+    background-color: #fff;
+    display: flex;
+
+}
+.contact_left{
+    flex-basis: 50%;
+    padding: 40px 60px;
+
+}
+.contact_left h3{
+    text-align: center;
+    padding: 1%;
+    font-size: 2rem;
+    margin-bottom: 6%;
+}
+.contact_right{
+    flex-basis: 50%;
+    padding: 40px;
+    background-color: rgb(10, 54, 65);
+    color: #fff;
+
+}
+.contact_container h1{
+    font-size: 3rem;
+    font-family: helvetica, Arial,
+    font-style: thin;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+.input_raw{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.input_raw .input_group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 1%;
+}
+textarea{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+.contact_right{
+    font-size: 2rem;
+    text-align: center;
+    font-family: helvetica, Arial;
+    color
+}
+@media only screen and (max-width: 1100px) {
+    .contact_box {
+        flex-direction: column;
+    }
+
+    .contact_left,
+    .contact_right {
+        flex-basis: 100%; 
+    }
+}
+.jacket_heading{
+    display: flex;
+}
+.box_jacket {
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+    padding: 3%;
+    background-color: rgb(10, 54, 64)
+}
+.box_jacket h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #edd1be;
+    font-size: 5rem;
+}
+.box_jacket img {
+    width: 30%; 
+    height:auto;
+    float: right; 
+    margin-left: 250px;
+    display: flex;
+}
+.Jacket_container {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    justify-content: space-between;
+}
+.Jacket_container{
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
-    background-color: rgb(10, 54, 65);
-    padding: 1.25rm;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: auto;
+
+    margin: 4%;
+}
+.Jacket_container img{
+    width: 100%;
     height: auto;
-    min-height: auto;
-    padding-left: 1%;
-    padding-right: 1%;
+    display: block;
+
+}
+@media only screen and (max-width: 1277px) {
+    .jacket_heading h1{
+        margin-left: 10%;
+        font-size: 3rem;
+        text-align: center;
+    }    
+    .Jacket_container img{
+        width: 90%;
+        height: auto;
+        padding-left: 12%;
+        flex-direction: column;   
+    }
+    .box_jacket img {
+        display: none;
+    }
+}
+.Show_product{
+    display: flex;
+    padding-left: 19%;
+}
+.big-img-product img{
+    margin-top: 30%;
+    width: 150%;
+    height: auto;
+    display: block;
+}
+.product-container{
+    
 }
