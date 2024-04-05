@@ -5,9 +5,11 @@
   }
 }
 body {
+  font-family: 'roboto', helvetica, sans-serif;
   overflow-x: hidden;
   background-color: #edd1be;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 500;
+
   color: rgb(10, 54, 65);
 }
 header {
@@ -43,19 +45,6 @@ nav li {
     display: block;
     margin-bottom: 10px;
   }
-}
-#search-field {
-  position: absolute;
-  right: 200px;
-  top: 20px;
-}
-.search {
-  position: absolute;
-  right: 300px;
-  top: 21px;
-  background: none;
-  border: none;
-  opacity: 30%;
 }
 li a {
   text-decoration: none;
@@ -233,13 +222,9 @@ h2 {
   margin-top: 140px;
   color: rgb(10, 54, 65)
   height: 50%;
-  padding-bottom: 2%;
-  padding-left: 1%;
-  padding-right: 1%;
 }
 .about_us_text h1 {
   font-size: 50px;
-  font-family: helvetica, Arial,
   font-style: thin;
 }
 .about_us_text p {
@@ -265,7 +250,6 @@ h2 {
     font-size: 30px;
   }
 }
-
 .contactbox_container .h1{
     padding-left: 10%;
     font-size: 50px;
@@ -273,12 +257,10 @@ h2 {
 .contact_box{
     background-color: #fff;
     display: flex;
-
 }
 .contact_left{
     flex-basis: 50%;
     padding: 40px 60px;
-
 }
 .contact_left h3{
     text-align: center;
@@ -291,7 +273,6 @@ h2 {
     padding: 40px;
     background-color: rgb(10, 54, 65);
     color: #fff;
-
 }
 .contact_container h1{
     font-size: 3rem;
@@ -349,10 +330,10 @@ textarea{
     background-color: rgb(10, 54, 64)
 }
 .box_jacket h1 {
-    margin-top: 5%;
+    margin-top: 7%;
     margin-left: 5%;
     color: #edd1be;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .box_jacket img {
     width: 30%; 
@@ -382,6 +363,12 @@ textarea{
     display: block;
 
 }
+.Jacket_container :hover{
+    transform:scale(1.05);
+    transition: 0.5s;
+    filter: brightness(95%);
+    
+}
 @media only screen and (max-width: 1277px) {
     .jacket_heading h1{
         margin-left: 10%;
@@ -398,16 +385,244 @@ textarea{
         display: none;
     }
 }
-.Show_product{
+.logo_h1 h1{
+    place-content: center;
+}
+.product_container{
     display: flex;
-    padding-left: 19%;
+    flex-direction: row;
+    padding-left: 1%;
+    margin-top: 5%;
+    margin-right: 1%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    color: #edd1be;
+    text-align: center;
+    font-size: 1.5rem;
+    place-content: center;
+    text-wrap: balance;
+}
+.product_container h1 {
+    padding: 2%;
+    color: #edd1be;
+    font-size: 3rem;
 }
 .big-img-product img{
-    margin-top: 30%;
-    width: 150%;
+    width: 100%;
     height: auto;
-    display: block;
+    flex: 0 1 calc(50% - 10%)
 }
-.product-container{
-    
+.product_info{
+    flex: 0 1 calc(50% - 10%); 
+    background-color: rgb(10, 54, 64);
+    padding: 5px;
+    height: 10%;
+    margin-left: 2%;
 }
+.product_info li{
+    margin-bottom: 3%;
+    letter-spacing: 2px;
+    list-style-type: none;
+    text-align: left;
+    place-content: center;
+    margin-left: 10%;
+}
+.buy_button button{
+    padding: 1%;
+    margin-top: 3%;
+    background-color: rgb(10, 54, 64);
+    font-size: 40px;
+    width: 100%;
+    height: auto;
+    color: #edd1be;
+    border: none
+}
+.buy_button :hover{
+    background-color: rgb(15, 75, 88);
+}
+.clothing_small_img{ 
+    display: flex;
+    margin-top: 1%;
+}
+.clothing_small_img img{
+    width: 98%;
+    height: auto;
+    padding-bottom: ;
+}
+.clothing_small_img :hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.Things_you_like-container{
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(10, 54, 64) 
+}
+.things_you_like_img{
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    gap:1%
+}
+.things_you_like_img img{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width:  1266px) {
+    h2{
+        display: none;
+    }
+   .Things_you_like-container{
+    display: none;
+   }
+   .product_info li {
+    display: none;
+   }
+   .product_info{
+    background-color:#edd1be
+   }
+   .product_container h1{
+    color: rgb(10, 54, 64);
+    padding: none;
+   }
+   .produckt_you_like h2{
+    display:none
+   }
+}
+.order_heading h1{
+    padding: 1%;
+    font-size: 3rem;
+    text-align:center
+}
+.Discount_container{
+    margin-top:10%;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+.Discount_container button{
+    padding: 1%;
+    margin-top: 1%;
+    background-color: rgb(10, 54, 64);
+    font-size: 20px;
+    color: #edd1be;
+    border: none
+}
+.First_product_place{
+    margin-top: 3%;
+    color: #edd1be;
+    background-color: #0a3641;
+    display: flex;
+}
+.product_1{
+    flex-basis: 70%;
+    padding: 40px 60px;
+    font-size: 3rem;
+}
+.product_1 h3{
+    text-align: center;
+    margin-top: 10%;
+}
+.chek_out{
+    flex-basis: 30%;
+    padding: 40px;
+    color:#edd1be;
+}
+.chek_out h3{
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 50%;
+}
+.chek_out button{
+    margin-left: 20%;
+    width:70%;
+    padding: 1%;
+    border: none;
+    background-color:#edd1be;
+    color: #0a3641;
+    font-size: 20px
+}
+.second_product_place{
+    background-color: #0a3641;
+    display: flex;
+    margin-top: 1%;
+}
+.product_2{
+    flex-basis: 72%;
+    padding: 40px 60px;
+    color: #edd1be;
+    font-size: 3rem;
+    text-align: center;
+}
+.product_2 h3{
+    padding: 2%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-right: 11%;
+}
+.payment_icon{
+    flex-basis: 30%;
+    padding: 40px;
+    color: #fff;
+}
+.footer_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    text-align: center;
+
+  }
+  .footer_box h3 {
+    color: rgb(10, 54, 65);
+  }
+  .footer_box li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+    color: rgb(10, 54, 65);
+    margin-right: 10%;
+  }
+  .footer_box ul {
+    list-style-type: none;
+  }
+  .footer_left {
+    flex-basis: 33.33%;
+  }
+  .footer_middel {
+    flex-basis: 33.33%;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  .ikons i {
+    color: rgb(10, 54, 65);
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+  .ikons i:hover {
+    color: rgb(15, 75, 88);
+  }
+  .instagram {
+    background-image: url("instagram.svg");
+  }
+  .footer_right {
+    flex-basis: 33.33%;
+  }
+  .footer_right input {
+    margin-bottom: 2%;
+    background-color: rgba(127, 255, 212, 0);
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 1%;
+  }
