@@ -53,8 +53,10 @@ li a {
     position: relative;
 }
 .hero_container img{
-    width: 100.1%;
+    width: 100%;
+    max-width: 100%;
     height: cover;
+    width: cover;
 }
 .banner_text{
     text-align: center;
@@ -222,6 +224,121 @@ h2 {
   display: flex;
   transform: translate(-50%, -50%);
 }
+.collection_container_phone{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  place-content: center;
+  object-fit:fill;
+  position: relative;
+}
+.collection_container_phone img {
+  MAX-width: 100%;
+
+}
+.collection_box1_phone{
+  width: 150PX;
+  height: 200PX;
+  background-color: #0a3641;
+  margin: 1px;
+  position: relative;
+}
+.collection_box1_phone h3{
+  position: absolute;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow:black 1px 1px 6px;
+  max-width: 100%;
+  color: #edd1be;
+  font-size: 25px;
+  text-align: center;
+}
+.collection_box2_phone{
+  width: 150PX;
+  height: 200px;
+  background-color: #0a3641;
+  margin: 1px;
+  position: relative;
+}
+.collection_box2_phone h3{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow:black 1px 1px 6px;
+  max-width: 100%;
+  color: #edd1be;
+  font-size: 20px;
+  text-align: center;
+}
+.big_box_container_phone{
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+}
+.mounten_hike_phone{
+  width: 302PX;
+  height: 200px;
+  background-color: #0a3641;
+  margin-top: 30px;
+  position: relative;
+}
+.mounten_hike_phone img{
+  max-width: 100%;
+}
+.mounten_hike_phone h3{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow:black 1px 1px 6px;
+  max-width: 100%;
+  color: #edd1be;
+  font-size: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .collection_container{
+    display: none;
+  }
+  .news_h2{
+    display:none;
+  }
+  .hero_container img{
+    display: none;
+  }
+  .iphone_image img{
+    display:show;
+    place-content: center;
+    max-width: 101%;
+    height: 700px;
+  }
+  .banner_text h1{
+    display: show;
+  }
+  .buttom_image_container{
+    display: none;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .hero_container img{
+    display: show;
+  }
+  .iphone_image img{
+    display:none;
+  }
+  .banner_text h1{
+    margin-bottom: 60%;
+  }
+  .big_box_container_phone{
+    display: none;
+  }
+  .collection_container_phone{
+    display: none;
+  }
+}
 .About_us{
   display: flex;
   margin-top: 10%;
@@ -268,74 +385,110 @@ h2 {
     font-size: 30px;
   }
 }
-.contactbox_container .h1{
-    padding-left: 10%;
-    font-size: 50px;
-}
-.contact_box{
+.contactbox_container {
   display: flex;
-    background-color: #fff;
-    display: flex;
 }
-.contact_left{
-    flex-basis: 50%;
-    padding: 40px 60px;
+.contact_box {
+  background-color: rgb(10, 54, 65);
+  display: flex;
+  border-left: #edd1be;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
-.contact_left h3{
-    text-align: center;
-    padding: 1%;
-    font-size: 2rem;
-    margin-bottom: 6%;
+.contact_right {
+  flex-basis: 40%;
+  padding: 40px 60px;
+  margin-top: 10%;
 }
-.contact_right{
-    flex-basis: 50%;
-    padding: 40px;
-    background-color: rgb(10, 54, 65);
-    color: #fff;
+.contact_right label {
+  color: #edd1be;
 }
-.contact_container h1{
-    margin-top: 10%;
-    margin-left: 40%;
-    font-size: 3rem;
-
+.contact_left {
+  flex-basis: 80%;
+  padding: 40px;
+  background-color: rgb(10, 54, 65);
+  color: #edd1be;
 }
-.input_raw{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+.contact_left h3 {
+  text-align: left;
+  font-size: 3rem;
 }
-.input_raw .input_group{
-    flex-basis: 45%;
+.contact_left p {
+  text-align: left;
+  font-size: 2rem;
 }
-input{
-    width: 100%;
-    border:none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    padding-bottom: 1%;
+.contact_left h4{
+  text-align: left;
+  font-size: 2rem;
 }
-textarea{
-    width: 100%;
-    border:none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    padding: 10px;
+.contact_container h1 {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 2rem;
 }
-.contact_right{
-    font-size: 2rem;
-    text-align: center;
-    font-family: helvetica, Arial;
-    color
+.input_raw {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.input_raw .input_group {
+  flex-basis: 45%;
+}
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #edd1be;
+  outline: none;
+  padding-bottom: 1%;
+  background-color: #0a3641;
+}
+textarea {
+  width: 99%;
+  border: none;
+  border-bottom: 1px solid #edd1be;
+  outline: none;
+  margin-top: 2%;
+  background-color: #0a3641;
+}
+.text_area {
+  margin-top: 5%;
+  margin-left: 3%;
 }
 @media only screen and (max-width: 1000px) {
-    .contact_box {
-        flex-direction: column;
-    }
-
-    .contact_left,
-    .contact_right {
-        flex-basis: 100%; 
-    }
+  .contact_box {
+    flex-direction: column;
+  }
+  .contact_right,
+  .contact_left {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .contact_left p {
+    display: none;
+  }
+  .icon_contac p{
+    display: show;
+  }
+  .contact_left h4{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .contact_left h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px){
+  .contact_left h4{
+    display: none;
+  }
+  .contact_right,
+  .contact_left {
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 12px;
+  }
 }
 .jacket_heading{
     display: flex;
@@ -343,15 +496,16 @@ textarea{
 .box_jacket {
     display: flex;
     width: 100%;
-    margin-top: 4%;
+    margin-top: 10%;
     padding: 3%;
+    place-content: center;
     background-color: rgb(10, 54, 64)
 }
 .box_jacket h1 {
     margin-top: 7%;
     margin-left: 5%;
     color: #edd1be;
-    font-size: 4rem;
+    font-size: 3vw;
 }
 .box_jacket img {
     width: 30%; 
@@ -360,46 +514,94 @@ textarea{
     margin-left: 250px;
     display: flex;
 }
-.Jacket_container {
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    margin-top: 5%;
-    margin-right: 3%;
-    margin-left: 3%;
-    justify-content: space-between;
+.product_container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  flex-wrap: wrap;
 }
-.Jacket_container{
-    display: flex;
-    flex-wrap: wrap;
-
-    margin: 4%;
+.product_1 {
+  overflow: hidden;
+  text-align: left;
+  width: 20%;
+  height: 30%;
+  margin-top: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
-.Jacket_container img{
-    width: 100%;
-    height: auto;
-    display: block;
+.product_1 img {
+  width: 100%;
+  margin-right: 5%;
 }
-.Jacket_container :hover{
-    transform:scale(1.05);
-    transition: 0.5s;
-    filter: brightness(95%);   
+.product_1 button {
+  width: 10%;
+  height: 2.5vw;
+  border: none;
+  margin-top: 2%;
 }
-@media only screen and (max-width: 1277px) {
-    .jacket_heading h1{
-        margin-left: 10%;
-        font-size: 3rem;
-        text-align: center;
-    }    
-    .Jacket_container img{
-        width: 90%;
-        height: auto;
-        padding-left: 12%;
-        flex-direction: column;   
-    }
-    .box_jacket img {
-        display: none;
-    }
+.button1 {
+  background-color: rgb(110, 1, 10);
+  margin-left: 2%;
+}
+.button2 {
+  background-color: rgb(0, 84, 38);
+}
+.product_info {
+  margin-left: 2%;
+  font-size: 2vw;
+  color: #0a3641;
+}
+.box_jacket img :hover{
+  transform: scale(1.1);
+}
+@media only screen and (max-width:  1050px){
+  .product_container{
+    justify-content: center;
+  }
+  .product_1 {
+    width: 250px;
+    height: 400px;
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+  .product_info{
+    font-size: 15px;
+  }
+  .product_1 button{
+    width: 15px;
+    height: 25px;
+    border: none;
+    margin-top: 2%
+  }
+  .box_jacket img{
+    display: none;
+  }
+  .box_jacket h1{
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width:  600px){
+  .product_container{
+    justify-content: center;
+  }
+  .product_1 {
+    width: 150px;
+    height: 300px;
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+  .product_info{
+    font-size: 15px;
+  }
+  .product_1 button {
+    width: 10px;
+    height: 20px;
+    border: none;
+    margin-top: 2%;
+  }
 }
 .logo_h1 h1{
     place-content: center;
@@ -485,8 +687,8 @@ textarea{
     display: flex;
     flex-direction: row;
 }
-@media only screen and (max-width:  1266px) {
-    h2{
+@media only screen and (max-width:  1100px) {
+  .produckt_you_like h2{
         display: none;
     }
    .Things_you_like-container{
@@ -512,7 +714,7 @@ textarea{
     text-align:center
 }
 .Discount_container{
-    margin-top:10%;
+    margin-top:5%;
     display: flex;
     align-items: center;
     place-content: center;
@@ -525,42 +727,66 @@ textarea{
     color: #edd1be;
     border: none
 }
-.First_product_place{
-    margin-top: 3%;
-    color: #edd1be;
-    background-color: #0a3641;
-    display: flex;
+.order_summery {
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
-.product_1{
-    flex-basis: 70%;
-    padding: 40px 60px;
-    font-size: 3rem;
+.First_product_place {
+  padding: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 800px;
+  height: 200px;
+  background-color: #0a3641;
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #edd1be;
 }
-.product_1 h3{
-    text-align: center;
-    margin-top: 10%;
+.chek_out {
+  position: relative;
+  place-content: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 2%;
+  width: 200px;
+  height: 200px;
+  background-color: #0a3641;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #edd1be;
 }
-.chek_out{
-    flex-basis: 30%;
-    padding: 40px;
-    color:#0a3641;
-    background-color: #edd1be;
+.chek_out button {
+  bottom: 10%;
+  position: absolute;
+  width: 90px;
+  padding: 5px;
+  border: none;
+  background-color: #edd1be;
+  color: #0a3641;
+  font-size: 25px;
 }
-.chek_out h3{
-    text-align: center;
-    padding: 1%;
-    margin-bottom: 50%;
-}
-.chek_out button{
-    margin-left: 20%;
-    width:70%;
-    padding: 1%;
-    border: none;
-    background-color:#0a3641;
-    color: #edd1be
+.chek_out h3 {
+  font-size: 40px;
+  position: relative;
 }
 .chek_out button:hover{
-  background-color: #115566;
+  background-color: #e7bb9d;
+}
+@media only screen and (max-width:  1266px) {
+  .chek_out{
+    margin-top: 5%;
+    width: 800px;
+    margin-left: none;
+  }
 }
 .second_product_place{
     background-color: #0a3641;
@@ -653,3 +879,5 @@ textarea{
     color: #edd1be;
     border: none
   }
+  
+  
