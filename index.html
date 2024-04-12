@@ -15,14 +15,14 @@
 <body>
     <header>
       <a href="index.html"><img src="img/RainyDays_Logo.png" class="logo_rainydays" alt="logo of rainydays"></a>
-      <nav>
-          <ul>
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="collection.html"> Collections</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </nav>
+        <input type="checkbox" id="menu-chekbox">
+        <label for="menu-chekbox" class="hamburger_menu"><i class="fa-solid fa-bars"></i></label>
+          <nav>
+            <a href="index.html">HOME</a>
+            <a href="collection.html">COLLECTION</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+          </nav> 
     </header>
     <main>
       <section>
@@ -40,7 +40,8 @@
           <h2>NEWS</h2>
           <div class="collection_container">
             <div class="spring_container">
-              <img src="img/Alaska_hike_stor.jpg" alt="a man hiking in Alaska">
+              <a></a>
+            <img src="img/Alaska_hike_stor.jpg" alt="a man hiking in Alaska">
               <div class="spring_text">
                 <h3>SPRING COLLECTION</h3>
               </div>
@@ -64,7 +65,7 @@
         <div class="products">
           <div class=" product_container">
             <div class="product_1">
-                <img src="/Users/andre/Desktop/Skole/HTML/Forelesninger_og_notater/beige_jacket_Bacckground.jpg" alt="model of rainydays guy in a beige jacket, the background is the norwegian landskape">
+                <a href="product.html"><img src="product_img/beige_jacket_Bacckground.jpg" alt="model of rainydays guy in a beige jacket, the background is the norwegian landskape"></a>
                 <button class="button1"></button>
                 <button class="button2"></button>
                <div class="product_info">
@@ -73,7 +74,7 @@
             </div>
           </div>
             <div class="product_1">
-                <img src="/Users/andre/Desktop/Skole/HTML/Forelesninger_og_notater/beige_jacket_Bacckground.jpg" alt="model of rainydays guy in a beige jacket, the background is the norwegian landskape">
+                <a href="product.html"><img src="product_img/17128394415872yavciru.png" alt="model of rainydays guy in a beige jacket, the background is the norwegian landskape"></a>
                 <button class="button1"></button>
                 <button class="button2"></button>
                <div class="product_info">
@@ -82,7 +83,7 @@
             </div>
         </div>
         <div class="product_1">
-          <img src="/Users/andre/Desktop/Skole/HTML/Forelesninger_og_notater/beige_jacket_Bacckground.jpg" alt="model of rainydays guy in a beige jacket, the background is the norwegian landskape">
+          <a href="product.html"><img src="product_img/Winred_jacket_background.jpg" alt="model of rainydays guy in a beige jacket, the background is the norwegian landskape"></a>
           <button class="button1"></button>
           <button class="button2"></button>
          <div class="product_info">
@@ -94,14 +95,13 @@
       </div>
         </div>
         </section>
-        <section class="buttom_image_container">
-          <div class="buttom_container">
-            <img src="img/orange_color.jpeg" alt="landskape picture wit a orange background">
-            <div class="more_to">MORE TO</div>
-            <div class="explore">EXPLORE</div>
-            <div class="Take_hike">TAKE YOUR HIKE TO THE NEXT LEVEL</div>
+        <section>
+          <div class="big_box_container_bottom">
+            <div class="big_img">
+              <img src="/Users/andre/Desktop/Skole/HTML/Forelesninger_og_notater/orange_color.jpeg" alt="">
+              <h3>MORE TO EXPLORE</h3>
+            </div>
           </div>
-        </div>
       </section>
       <section>
         <div class="collection_container_phone">
@@ -127,10 +127,8 @@
         <div class="footer_box">
           <div class="footer_left">
             <h3>ABOUT US</h3>
-            <ul>
-              <li><a href="about.html">ABOUT US</a></li>
-              <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
+              <a href="about.html">ABOUT US</a>
+              <a href="contact.html">CONTACT US</a>
           </div>
           <div class="footer_middel">
             <h3>SOCIAL MEDIA</h3>
@@ -151,7 +149,7 @@
               <p> Get updates from Raiydays</p>
               <label for="email"> Email</label>
               <input type="email" name="email" id="email" class="input-footer">
-              <button>Subscrie</button>
+              <button>Sub</button>
           </div>
         </div>
       </div>
