@@ -216,10 +216,10 @@ h2 {
   padding-bottom: 1%;
   position: static;
 }
-.big_box_container_bottom{
+.big_box_container_bottom {
   display: flex;
 }
-.big_img{
+.big_img {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -228,7 +228,7 @@ h2 {
   margin-top: 30px;
   position: relative;
 }
-.big_img img{
+.big_img img {
   max-height: 90%;
   margin-top: 2%;
 }
@@ -236,7 +236,7 @@ h2 {
   display: flex;
   place-content: center;
 }
-.big_img h3{
+.big_img h3 {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -343,8 +343,8 @@ h2 {
     display: none;
   }
 }
-@media only screen and (max-width: 700px){
-   .big_box_container_bottom {
+@media only screen and (max-width: 700px) {
+  .big_box_container_bottom {
     display: none;
   }
 }
@@ -365,69 +365,67 @@ h2 {
     display: none;
   }
 }
-.about_us_container{
+.about_us_container {
   margin-top: 7%;
   display: flex;
   justify-content: center;
 }
-.about_us_container img{
-  max-width:45%;
+.about_us_container img {
+  max-width: 45%;
   height: auto;
   margin-right: -100px;
 }
-.about_us_bigbox{
+.about_us_bigbox {
   width: 600px;
   height: 650px;
   background-color: rgba(15, 80, 96, 0.606);
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.about_us_text{
+.about_us_text {
   overflow: hidden;
   font-size: 20px;
   text-align: center;
   margin-top: 15%;
-  margin-left:10%;
+  margin-left: 10%;
   margin-right: 10%;
-  background-color:rgb(15, 80, 96);
+  background-color: rgb(15, 80, 96);
   color: #edd1be;
-  padding:2px
+  padding: 2px;
 }
-.about_img_phone img{
+.about_img_phone img {
   display: none;
 }
 @media (min-width: 1700px) {
-  .about_us_bigbox{
+  .about_us_bigbox {
     width: 50%;
     height: 850px;
   }
-  .about_us_text{
+  .about_us_text {
     margin-left: 10%;
     font-size: 27px;
   }
-  
 }
 @media (max-width: 1060px) {
-  .about_us_container{
+  .about_us_container {
     flex-wrap: wrap-reverse;
   }
-  .about_us_bigbox{
-    max-width:  100%;
+  .about_us_bigbox {
+    max-width: 100%;
     height: 110%;
   }
-  .about_us_container img{
+  .about_us_container img {
     max-width: 70%;
     margin-right: 0px;
     top: 600px;
   }
-  .about_us_text{
+  .about_us_text {
     height: auto;
     font-size: 3vw;
   }
-
 }
 @media (max-width: 700px) {
-  .about_us_container img{
+  .about_us_container img {
     max-width: 70%;
     top: 43%;
   }
@@ -501,6 +499,11 @@ textarea {
 .text_area {
   margin-top: 5%;
   margin-left: 3%;
+}
+.contact_right,
+input,
+textarea {
+  color: #edd1be;
 }
 @media only screen and (max-width: 1000px) {
   .contact_box {
@@ -796,6 +799,7 @@ textarea {
 .chek_out {
   position: relative;
   place-content: center;
+  flex-direction: column;
   margin-left: 1%;
   margin-right: 1%;
   padding: 2%;
@@ -811,7 +815,7 @@ textarea {
 }
 .chek_out button {
   bottom: 10%;
-  position: absolute;
+  position: relative;
   width: 90px;
   padding: 5px;
   border: none;
@@ -832,13 +836,13 @@ textarea {
     width: 800px;
     margin-left: none;
   }
-  .order_heading{
+  .order_heading {
     margin-top: 5rem;
   }
-  .order_summery{
+  .order_summery {
     margin: 5%;
   }
-  .Discount_container button{
+  .Discount_container button {
     margin-top: 1%;
     background-color: rgb(10, 54, 64);
     font-size: 15px;
@@ -872,7 +876,7 @@ textarea {
   flex-basis: 33.33%;
   display: block;
 }
-.footer_left a{
+.footer_left a {
   display: block;
 }
 .footer_middel {
@@ -912,12 +916,12 @@ textarea {
   color: #edd1be;
   border: none;
 }
-@media only screen and (max-width: 700px){
-  .footer_container{
+@media only screen and (max-width: 700px) {
+  .footer_container {
     display: flex;
     margin-bottom: 5%;
   }
-  .footer_container h3{
+  .footer_container h3 {
     font-size: 2rem;
   }
   .ikons i {
@@ -925,28 +929,43 @@ textarea {
     letter-spacing: 2px;
     font-size: 1.5rem;
   }
-  .footer_box h3{
+  .footer_box h3 {
     font-size: 1rem;
   }
-  .footer_left a{
+  .footer_left a {
     font-size: 11px;
   }
-  .footer_left h3{
+  .footer_left h3 {
     font-size: 12px;
   }
-  .footer_middel h3{
+  .footer_middel h3 {
     font-size: 12px;
   }
-  .footer_right label{
-   font-size: 0;
+  .footer_right label {
+    font-size: 0;
   }
-  .footer_right input{
+  .footer_right input {
     border-bottom: 1px solid black;
-   }
-  .footer_right p{
+  }
+  .footer_right p {
     display: none;
   }
-  .footer_right h3{
+  .footer_right h3 {
     font-size: 12px;
   }
+}
+.Payment_sucsess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  margin: 15%;
+  background-color: white;
+}
+.Payment_sucsess img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 3%;
 }
