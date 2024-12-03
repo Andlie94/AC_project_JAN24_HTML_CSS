@@ -4,7 +4,7 @@ The task of this project was to create and set up a website for a fictional comp
 ## Description
 This project involves designing and developing a website for a fictional firm called Rainydays using HTML, CSS, and Figma. The purpose of the project is to learn how to use Figma, CSS, and HTML.
 About the projects
-+ Designe: make a visual design in figma
++ Design: make a visual design in figma
 + HTML: Build a webpage by using HTML to structure the projects.
 + CSS: to style the webpage, like fonts, color etc.
 + Responsive design: this is to make sure that the website works on different sizes(mobile, web, pad).
@@ -15,9 +15,8 @@ For this project, we used three types of technologies.
 + HTML
 + CSS
 ## want to try it out or mod it?
-Here is how you can install it: go to your console in VSCode and follow the instructions.
 ### Install
-
+Here is how you can install it: go to your console in VSCode and follow the instructions.
 1. Clone the repo.
    
 `git clone git@github.com:NoroffFEU/portfolio-1-example.git`
@@ -27,7 +26,7 @@ Here is how you can install it: go to your console in VSCode and follow the inst
 `npm install`
 
 ### Running
-To run the app  
+To run the app local on your computer
 `npm run start`
 
 ## Contributing
