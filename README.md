@@ -20,11 +20,12 @@ Here is how you can install it: go to your console in VSCode and follow the inst
 
 1. Clone the repo.
    
-   `git clone git@github.com:NoroffFEU/portfolio-1-example.git`
+`git clone git@github.com:NoroffFEU/portfolio-1-example.git`
 
 2. install
 
-   `npm install`
+`npm install`
+
 ### Running
 To run the app  
 `npm run start`
